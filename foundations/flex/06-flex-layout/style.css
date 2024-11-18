@@ -5,6 +5,40 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .footer {
+  display: flex; 
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.content {
+  flex: 1; /* as the body covers 100% of the page, that property makes the elements in it fit as much space it has */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px; /* make the elements have a good space between them */
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  background: #eee;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
 
 img {
